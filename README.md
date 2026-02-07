@@ -14,8 +14,10 @@ if we want to enforce a specific user
 
 ### Linux ( tested on Debian Trixie )
 Just start the make file, which will compile and link the module
-> gcc -fPIC -fno-stack-protector -c auth.c
-> ld -x --shared -lcrypt -o /lib/x86_64-linux-gnu/security/wauth.so auth.o
+```
+gcc -fPIC -fno-stack-protector -c auth.c
+ld -x --shared -lcrypt -o /lib/x86_64-linux-gnu/security/wauth.so auth.o
+```
 
 ## In Action
 ```
